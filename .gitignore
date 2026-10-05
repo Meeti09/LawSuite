@@ -1,0 +1,47 @@
+# LawSuite — Legal help, made understandable.
+# Monorepo: backend (FastAPI) + frontend (Next.js). No Docker required.
+
+# Env / secrets - never commit real env files, keep examples
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+!*.env.example
+backend/.env
+frontend/.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.db
+*.sqlite
+*.sqlite3
+lawsuite.db
+backend/lawsuite.db
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+next-env.d.ts
+frontend/tsconfig.tsbuildinfo
+frontend/next-env.d.ts
+.npm/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
